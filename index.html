@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link href="output.css" rel="stylesheet">
   <title>Plant Website || TailwindCSS</title>
 </head>
@@ -142,14 +144,311 @@
           Shop confidently with secure and encrypted payment gateways.
         </p>
       </div>
+    </div>
+  </section>
+  <!---------- About --------->
+  <section id="about" class="relative overflow-hidden">
 
+    <div class="absolute -top-10 -right-24 opacity-70">
+      <img src="assets/img/leaf-3.png" alt="Decorative leaf" class="w-50 md:w-70 xl:w-80">
     </div>
 
 
+    <div class="flex flex-col items-center justify-center text-center mb-10 md:mb-20">
+      <h2 class="font-Lobster text-yellow-500 text-2xl md:text-3xl xl:text-4xl">About us</h2>
+      <p class="max-w-2xl">Follow instruction for more</p>
+    </div>
+
+    <!-------item  --------->
+    <div class="flex flex-col lg:flex-row items-center gap-5">
+
+      <!-- Image on the left -->
+      <div class="w-full lg:w-[45%]">
+        <img src="assets/img/plant-2.png" alt="Plant" class="w-full sm:w-2/3 lg:w-2/3 mx-auto">
+      </div>
+
+      <!-- Text on the right -->
+      <div class="w-full lg:w-[55%] ">
+        <div class="space-y-5 text-center lg:text-left">
+          <h3 class="text-2xl md:text-3xl xl:text-4xl">
+            Make your <span class="text-yellow-500">organic</span><br>
+            garden
+          </h3>
+          <p class="text-slate-300 font-Lobster">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ratione rem maxime veniam cum libero
+            voluptas tempora aut saepe similique, eos corporis. Expedita culpa consequatur animi deleniti ullam adipisci
+            iure sequi dolores modi aliquam laudantium, explicabo nobis quia id reprehenderit.?
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-------item 2--------->
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-5">
+
+      <!-- Image on the left -->
+      <div class="w-full lg:w-[35%]">
+        <img src="assets/img/plant-1.png" alt="Plant" class="w-full sm:w-2/3 lg:w-2/3 mx-auto">
+      </div>
+
+      <!-- Text on the right -->
+      <div class="w-full lg:w-[50%] ">
+        <div class="space-y-5 text-center lg:text-left">
+          <h3 class="text-2xl md:text-3xl xl:text-4xl">
+            Make your <span class="text-yellow-500">organic</span><br>
+            garden
+          </h3>
+          <p class="text-slate-300 font-Lobster">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ratione rem maxime veniam cum libero
+            voluptas tempora aut saepe similique, eos corporis. Expedita culpa consequatur animi deleniti ullam adipisci
+            iure sequi dolores modi aliquam laudantium, explicabo nobis quia id reprehenderit.?
+          </p>
+        </div>
+      </div>
+
+    </div>
 
   </section>
 
+  <!------ popular section ----->
+  <section id="popular" class="bg-green-900">
+    <div class="flex flex-col items-center justify-center text-center mb-10 md:mb-20">
+      <h2 class="font-Lobster text-yellow-500 text-2xl md:text-3xl xl:text-4xl">Your Choice Plant</h2>
+      <p class="max-w-2xl">Follow insturaction for More</p>
+    </div>
+    <div class="max-w-[1280px] w-full  mx-auto mt-10 grid grid-cols-1 md:grid-cols-4  gap-20 md:gap-10  ">
+      <!-- Card -->
+      <div
+        class="bg-green-950 p-10 pt-20 rounded-md relative text-white shadow-lg transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl animate-slide-in">
+
+        <!-- Centered Image -->
+
+        <img src="assets/img/cart-1.png" alt="popular_image"
+          class="w-28 h-auto absolute -top-12 left-[70%] transform -translate-x-1/2 rounded-full shadow-md">
+
+
+
+        <!-- Plant Name -->
+        <p class="italic text-center mt-4">Nephrolepis exaltata</p>
+        <h3 class="text-2xl font-semibold text-center">Boston Fern</h3>
+
+        <!-- Rating -->
+        <div class="text-yellow-500 text-sm py-3 flex justify-center gap-1">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+          <i class="ri-star-line text-gray-400"></i>
+          <i class="ri-star-line text-gray-400"></i>
+        </div>
+
+        <!-- Price and Cart -->
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-xl font-bold">$5</p>
+          <button
+            class="bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded text-xl text-black transition duration-300">
+            <i class="ri-shopping-cart-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2-->
+      <div
+        class="bg-green-950 p-10 pt-20 rounded-md relative text-white shadow-lg transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl animate-slide-in">
+
+        <!-- Centered Image -->
+        <img src="assets/img/cart-2.png" alt="popular_image"
+          class="w-28 h-auto absolute -top-12 left-[70%]  transform -translate-x-1/2 rounded-full shadow-md">
+
+        <!-- Plant Name -->
+        <p class="italic text-center mt-4">Ficus elastica</p>
+        <h3 class="text-2xl font-semibold text-center">Rubber Plant</h3>
+
+        <!-- Rating -->
+        <div class="text-yellow-500 text-sm py-3 flex justify-center gap-1">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+          <i class="ri-star-line text-gray-400"></i>
+          <i class="ri-star-line text-gray-400"></i>
+        </div>
+
+        <!-- Price and Cart -->
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-xl font-bold">$5</p>
+          <button
+            class="bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded text-xl text-black transition duration-300">
+            <i class="ri-shopping-cart-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="bg-green-950 p-10 pt-20 rounded-md relative text-white shadow-lg transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl animate-slide-in">
+
+        <!-- Centered Image -->
+        <img src="assets/img/cart-3.png" alt="popular_image"
+          class="w-28 h-auto absolute -top-12 left-[70%]  transform -translate-x-1/2 rounded-full shadow-md">
+
+        <!-- Plant Name -->
+        <p class="italic text-center mt-4">Spathiphyllum wallisii</p>
+        <h3 class="text-2xl font-semibold text-center">Peace Lily</h3>
+
+        <!-- Rating -->
+        <div class="text-yellow-500 text-sm py-3 flex justify-center gap-1">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+          <i class="ri-star-line text-gray-400"></i>
+          <i class="ri-star-line text-gray-400"></i>
+        </div>
+
+        <!-- Price and Cart -->
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-xl font-bold">$5</p>
+          <button
+            class="bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded text-xl text-black transition duration-300">
+            <i class="ri-shopping-cart-fill"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4-->
+      <div
+        class="bg-green-950 p-10 pt-20 rounded-md relative text-white shadow-lg transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl animate-slide-in">
+
+        <!-- Centered Image -->
+        <img src="assets/img/cart-4.png" alt="popular_image"
+          class="w-28 h-auto absolute -top-12 left-[70%] transform -translate-x-1/2 rounded-full shadow-md">
+
+        <!-- Plant Name -->
+        <p class="italic text-center mt-4">Adenium obesum</p>
+        <h3 class="text-2xl font-semibold text-center">Desert Rose</h3>
+
+        <!-- Rating -->
+        <div class="text-yellow-500 text-sm py-3 flex justify-center gap-1">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+          <i class="ri-star-line text-gray-400"></i>
+          <i class="ri-star-line text-gray-400"></i>
+        </div>
+
+        <!-- Price and Cart -->
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-xl font-bold">$5</p>
+          <button
+            class="bg-yellow-500 hover:bg-yellow-400 px-3 py-1 rounded text-xl text-black transition duration-300">
+            <i class="ri-shopping-cart-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---------- Review --------->
+  <section class="review">
+
+
+    <div class="flex flex-col items-center justify-center text-center mb-10 md:mb-20">
+      <h2 class="font-Lobster text-yellow-500 text-2xl md:text-3xl xl:text-4xl">Customer Review</h2>
+      <p class="max-w-2xl">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="container">
+      <div class="swiper py-8 w-[90%] mx-auto">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-2 bg-green-900 rounded-md p-4">
+              <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                voluptas asperiores
+                alias sed
+              </p>
+              <div class="flex items-center">
+                <img src="assets/img/review-1.jpg" alt="" class="w-10 h-10 rounded-full">
+              </div>
+              <div class="ml-2">
+                <p class="text-yellow-500 uppercase">John doe</p>
+                <p>Designer</p>
+              </div>
+
+              <i class="ri-double-quotes-r"></i>
+            </div>
+
+          </li>
+
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-2 bg-green-900 rounded-md p-4">
+              <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                voluptas asperiores
+                alias sed
+              </p>
+              <div class="flex items-center">
+                <img src="assets/img/review-2.jpg" alt="" class="w-10 h-10 rounded-full">
+              </div>
+              <div class="ml-2">
+                <p class="text-yellow-500 uppercase">John doe</p>
+                <p>Designer</p>
+              </div>
+
+              <i class="ri-double-quotes-r"></i>
+            </div>
+
+          </li>
+
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-2 bg-green-900 rounded-md p-4">
+              <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                voluptas asperiores
+                alias sed
+              </p>
+              <div class="flex items-center">
+                <img src="assets/img/review-3.jpg" alt="" class="w-10 h-10 rounded-full">
+              </div>
+              <div class="ml-2">
+                <p class="text-yellow-500 uppercase">John doe</p>
+                <p>Designer</p>
+              </div>
+
+              <i class="ri-double-quotes-r"></i>
+            </div>
+
+          </li>
+
+          <li class="swiper-slide">
+            <div class="flex flex-col gap-2 bg-green-900 rounded-md p-4">
+              <p class="font-Lobster">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique culpa ut amet
+                voluptas asperiores
+                alias sed
+              </p>
+              <div class="flex items-center">
+                <img src="assets/img/review-4.jpg" alt="" class="w-10 h-10 rounded-full">
+              </div>
+              <div class="ml-2">
+                <p class="text-yellow-500 uppercase">John doe</p>
+                <p>Designer</p>
+              </div>
+
+              <i class="ri-double-quotes-r"></i>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+  </section>
+  <!---------- Footer --------->
+
+
+  <!------ swiper js ------>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--------main.js  -------->
+  <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 
 </html>

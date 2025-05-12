@@ -8,7 +8,7 @@
 
 body 
 {
-  @apply bg-green-950 text-white font-jost tracking-wider;
+  @apply bg-green-950 text-white  tracking-wider;
 }
 .nav-link
 {

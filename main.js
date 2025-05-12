@@ -17,3 +17,32 @@ navLinks.forEach(link => {
     toggleIcon.classList.add("ri-menu-4-line");
   });
 });
+
+// Swiper initialization
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  speed: 400,
+  spacebetween: 30,
+  autoplay:{
+    delay: 3000,
+    disableoninteractino: false,
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+   grabCursor: true,
+   breakpoints: {
+   640:{
+    slidesPerView: 1,
+
+   },
+
+   700:{
+    slidesPerView: 1,
+
+   },
+  }
+});
